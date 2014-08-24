@@ -1,1 +1,22 @@
-Hello World
+---
+layout: post
+title: Sh4kE's Blog | Index
+---
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+    </head>
+    <body bgcolor=white>
+
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </body>
+</html>
