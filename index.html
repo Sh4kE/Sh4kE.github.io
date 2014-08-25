@@ -1,9 +1,32 @@
 ---
-layout: post
+layout: default
 title: Sh4kE's Blog | Index
 ---
 
-<!DOCTYPE HTML>
+<section role="banner">
+  <img src="/img/banner.jpg" />
+</section>
+
+<section class="content">
+  <p>
+  Welcome to Sh4kE's Blog! Please, check out <a href="/portfolio/">my portfolio</a> to grab some infos on me.
+  </p>
+</section>
+
+<ul class="entries">
+  {% for post in site.posts %}
+
+  <li>
+    <a href="{{ post.url }}">
+      <img src="{{ post.image }}" />
+      <h3>{{ post.title }}</h3>
+    </a>
+  </li>
+
+  {% endfor %}
+</ul>
+
+<!-- <!DOCTYPE HTML>
 <html>
     <head>
         <title>{{ page.title }}</title>
@@ -20,4 +43,4 @@ title: Sh4kE's Blog | Index
         </ul>
 
     </body>
-</html>
+</html> -->
