@@ -1,16 +1,15 @@
 ---
 layout: post
-title: This is my first Blog entry !!11einself
+title: First Blog entry
 ---
 
-Test test 123
+This is my first blog entry.
 
-{% highlight ruby %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
+Here is some code, hopefully with highlights:
+{% highlight python %}
+def main():
+    # my code here
+
+    if __name__ == "__main__":
+            main()
 {% endhighlight %}
