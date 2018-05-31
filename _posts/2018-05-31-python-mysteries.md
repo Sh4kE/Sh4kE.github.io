@@ -11,7 +11,7 @@ tags : [python, mystery]
 What do you believe this will print?
 
 {% highlight python %}
-for _ in range(100):
+for _ in range(10):
     def _(_=42):
         return _
 _()
@@ -23,5 +23,7 @@ And what about this one?
 def f(foo=[]):
     foo.append(len(foo))
     return foo
-f()
+
+for _ in range(10):
+    f()
 {% endhighlight %}
