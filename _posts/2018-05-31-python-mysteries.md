@@ -8,11 +8,20 @@ tags : [python, mystery]
 
 # Mysterious python stuff
 
- What do you believe this will print? 
-{% highlight python %}
-    for _ in range(100):
-        def _(_=42):
-            return _
+What do you believe this will print?
 
-    _()
+{% highlight python %}
+for _ in range(100):
+    def _(_=42):
+        return _
+_()
+{% endhighlight %}
+
+And what about this one?
+
+{% highlight python %}
+def f(foo=[]):
+    foo.append(len(foo))
+    return foo
+f()
 {% endhighlight %}
